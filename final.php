@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_final.css">
+    
 </head>
 <body>
     
@@ -33,7 +34,8 @@
                     <span></span>
                     <div class="content">
                     <h2>Congratulations</h2>
-                    <p>With effort and perseverance, you were able to answer <?php echo  $_SESSION["scores"] ?> question correctly from <?php echo  $_SESSION["total"] ?> question and finally get a score of <?php echo  $_SESSION["scores"] * 2 ?></p>
+                    <hr>
+                    <p>Answers : <?php echo  $_SESSION["scores"] ?>  of  <?php echo  $_SESSION["total"] ?> <br> <?php echo  round($_SESSION["scores"] * 100 /$_SESSION["total"]);   ?> %</p><br>
                     <a href="index.php">Test Again</a>
                     </div>
                 </div>
